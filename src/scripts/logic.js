@@ -1,5 +1,4 @@
 export const getResult = (userNumber) => {
-    if(!userNumber instanceof Number) throw new Error ('userNumber must be a number type.');
     const randomNumber = getRandomNumber();
     return {
         userNum: userNumber,
@@ -11,3 +10,9 @@ export const getResult = (userNumber) => {
 export const saveResult = (resultsArr, result) => [...resultsArr, result];
 
 const getRandomNumber = () => Math.round(Math.random()*9)+1;
+
+export const validateInput = (input) => {
+    if(!input instanceof Number) return false;
+    if(input < 1 || input > 10) return false;
+    return true;
+}
