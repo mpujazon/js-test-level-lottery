@@ -1,5 +1,6 @@
 const messageContainer = document.getElementById('message-container');
 const rowResultsContainer = document.getElementById('row-results-container');
+const errorMessage = document.getElementById('error-message');
 
 export const renderMessage = (result) => {
         messageContainer.innerHTML = `Has ${result.userWins? 'ganado': 'perdido'}, el número ganador es el ${result.winnerNum}`
@@ -16,4 +17,10 @@ export const renderResultsTable = (resultsArr) => {
                 </tr>
             `
     });
+}
+
+export const showErrorMessage = (show) => {
+    show?
+        errorMessage.classList.remove('hidden')
+        : errorMessage.classList.add('hidden');
 }

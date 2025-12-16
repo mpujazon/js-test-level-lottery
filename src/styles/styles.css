@@ -66,3 +66,13 @@ table, td, th{
     text-align: center;
     padding: .25em;
 }
+
+#error-message{
+    font-size: .75rem;
+    color: red;
+    font-weight: bold;
+}
+
+#error-message.hidden{
+    display: none;
+}
