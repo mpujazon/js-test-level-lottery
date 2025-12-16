@@ -1,4 +1,4 @@
-import { getResult, saveResult, validateInput} from "./src/scripts/logic.js";
+import { clearResults, getResult, saveResult, validateInput} from "./src/scripts/logic.js";
 import { renderMessage, renderResultsTable, resetForm, showErrorMessage } from "./src/scripts/ui.js";
 
 let result = {};
@@ -24,3 +24,11 @@ const handleSubmit = (e) => {
 }
 const form = document.getElementById('lottery-form');
 form.addEventListener('submit', handleSubmit);
+
+const handleClearResults = () => { 
+    resultsArr = clearResults();
+    renderResultsTable(resultsArr);
+    resetForm();
+}
+const clearResultsBtn = document.getElementById('clear-results-btn');
+clearResultsBtn.addEventListener('click', handleClearResults);

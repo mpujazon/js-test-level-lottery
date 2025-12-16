@@ -16,3 +16,5 @@ export const validateInput = (input) => {
     if(input < 1 || input > 10) return false;
     return true;
 }
+
+export const clearResults = () => [];

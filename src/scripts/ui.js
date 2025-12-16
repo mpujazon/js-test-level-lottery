@@ -13,7 +13,7 @@ export const renderResultsTable = (resultsArr) => {
                 <tr>
                     <td>${result.userNum}</td>
                     <td>${result.winnerNum}</td>
-                    <td>${result.userWins}</td>
+                    <td>${result.userWins? 'Ganaste! 🎉':'Perdiste 😕'}</td>
                 </tr>
             `
     });
