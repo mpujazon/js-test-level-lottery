@@ -7,3 +7,5 @@ export const getResult = (userNumber) => {
         userWins: userNumber === randomNumber
     }
 }
+
+const getRandomNumber = () => Math.round(Math.random()*9)+1;
