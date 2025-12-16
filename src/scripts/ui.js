@@ -24,3 +24,8 @@ export const showErrorMessage = (show) => {
         errorMessage.classList.remove('hidden')
         : errorMessage.classList.add('hidden');
 }
+
+export const resetForm = () => {
+    showErrorMessage(false);
+    messageContainer.innerHTML = '';
+}
