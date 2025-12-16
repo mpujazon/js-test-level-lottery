@@ -1,5 +1,5 @@
 import { getResult, saveResult } from "./src/scripts/logic.js";
-import { renderMessage } from "./src/scripts/ui.js";
+import { renderMessage, renderResultsTable } from "./src/scripts/ui.js";
 
 let result = {};
 let resultsArr = [];
@@ -10,6 +10,7 @@ const handleSubmit = (e) => {
         result = getResult(Number(e.target[0].value));
         renderMessage(result);
         resultsArr = saveResult(resultsArr, result);
+        renderResultsTable(resultsArr);
 
     }catch(err){
         console.error(err);
