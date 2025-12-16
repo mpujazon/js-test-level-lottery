@@ -1,1 +1,40 @@
-<!-- TODO: UI -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="form-container">
+            <form id="lottery-form">
+                <label for="userNumber">Introduce un número del 1 al 10:</label>
+                <input type="number" name="userNumber" id="" min="1" max="10">
+                <button type="submit">Comprobar resultado</button>
+            </form>
+            <article id="message-container">
+            </article>
+        </section>
+        <section id="results-container">
+            Últimas jugadas:
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número usuario</th>
+                        <th>Número ganador</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="row-results-container">
+                    <tr>
+
+                    </tr>
+                </tbody>
+            </table>
+            <button>Borrar historial</button>
+        </section>
+    </main>
+</body>
+</html>
