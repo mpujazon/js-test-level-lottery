@@ -8,4 +8,6 @@ export const getResult = (userNumber) => {
     }
 }
 
+export const saveResult = (resultsArr, result) => [...resultsArr, result];
+
 const getRandomNumber = () => Math.round(Math.random()*9)+1;
