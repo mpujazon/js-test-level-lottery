@@ -60,3 +60,9 @@ button{
 button:hover{
     outline: .2em solid rgb(111, 111, 111);
 }
+
+table, td, th{
+    border: 1px solid;
+    text-align: center;
+    padding: .25em;
+}
